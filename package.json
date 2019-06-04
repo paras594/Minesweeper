@@ -1,0 +1,45 @@
+{
+   "name": "minesweeper",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "start": "webpack-dev-server --open --mode development",
+      "build": "webpack --mode production"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "@babel/core": "*",
+      "@babel/plugin-proposal-class-properties": "*",
+      "@babel/preset-env": "*",
+      "@babel/preset-react": "*",
+      "@types/node": "*",
+      "autoprefixer": "*",
+      "babel-eslint": "*",
+      "babel-loader": "*",
+      "css-loader": "*",
+      "css-mqpacker": "*",
+      "eslint": "*",
+      "eslint-plugin-react": "*",
+      "file-loader": "*",
+      "html-loader": "*",
+      "html-webpack-plugin": "*",
+      "mini-css-extract-plugin": "*",
+      "node-sass": "*",
+      "postcss-loader": "*",
+      "react": "*",
+      "react-dom": "*",
+      "react-router-dom": "*",
+      "resolve-url-loader": "*",
+      "sass-loader": "*",
+      "url-loader": "*",
+      "webpack": "*",
+      "webpack-cli": "*",
+      "webpack-dev-server": "*"
+   },
+   "dependencies": {
+      "prop-types": "*"
+   }
+}

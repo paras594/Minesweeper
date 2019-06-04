@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,
+body {
+   height: 100%;
+   min-height: 600px;
+   font-family: sans-serif;
+}
+
+h1 {
+   font-family: "Audiowide", cursive;
+   font-weight: 100;
+   font-size: 40px;
+   text-align: center;
+   margin-top: 20px;
+
+   @media (max-width: 500px) {
+      font-size: 30px;
+   }
+}
+
+p {
+   padding: 5px;
+   text-align: center;
+   font-family: sans-serif;
+   color: #f00;
+
+   @media (max-width: 500px) {
+      font-size: 14px;
+   }
+}
+
+.restart-btn {
+   background: #fff;
+   border: 1px solid black;
+   border-radius: 2px;
+   padding: 6px 15px;
+   margin: 8px auto;
+   cursor: pointer;
+   display: block;
+   transition: background 0.2s ease;
+   outline: none;
+   font-size: 16px;
+
+   @media (max-width: 500px) {
+      font-size: 14px;
+   }
+
+   @media (max-width: 400px) {
+      font-size: 12px;
+   }
+}
+
+.restart-btn:hover {
+   background: #c3ff88;
+}
+
+.board {
+   border: 5px solid;
+   width: 450px;
+   height: 450px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   padding: 1px;
+
+   @media (max-width: 850px) {
+      width: 400px;
+      height: 400px;
+   }
+
+   @media (max-width: 500px) {
+      width: 300px;
+      height: 300px;
+      border: 3px solid black;
+      padding: 0;
+   }
+
+   @media (max-width: 450px) {
+      width: 80vw;
+      height: 80vw;
+      border: 2px solid black;
+      padding: 0;
+   }
+}
+
+.row {
+   flex: 1 1 0;
+   display: flex;
+}
+
+.cell {
+   margin: 1px;
+   border: 1px solid black;
+   flex: 1 1 0;
+   background: royalblue;
+   outline: none;
+   transition: all 0.15s ease;
+   font-size: 18px;
+
+   @media (max-width: 850px) {
+      font-size: 14px;
+      margin: 1px;
+   }
+
+   @media (max-width: 500px) {
+      font-size: 12px;
+   }
+}
+
+img {
+   display: block;
+   width: 60%;
+   margin: 0 auto;
+
+   @media (max-width: 500px) {
+      width: 60%;
+   }
+}
+
+.cell.open {
+   background: rgb(215, 236, 255);
+}
+
+h2 {
+   text-align: center;
+   font-size: 25px;
+   font-family: sans-serif;
+   padding: 10px 0;
+
+   @media (max-width: 500px) {
+      font-size: 18px;
+   }
+}
